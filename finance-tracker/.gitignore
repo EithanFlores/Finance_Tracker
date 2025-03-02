@@ -1,0 +1,9 @@
+# Ignore database & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite
+database.db
+
+# Ignore virtual environment
+venv/
