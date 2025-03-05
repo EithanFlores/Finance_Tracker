@@ -1,4 +1,4 @@
-##Personal Finance Tracker
+# Personal Finance Tracker
 
 Video: https://drive.google.com/file/d/1l5sisdzOdmJod9wU4JaN__xPeeL5UCo0/view?usp=sharing
 
