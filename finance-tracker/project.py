@@ -27,9 +27,8 @@ def generate_pie_chart():
     total_income = sum(t.amount for t in transactions if t.type == "Income")
     total_expense = sum(t.amount for t in transactions if t.type == "Expense")
 
-    # Prevent NaN Error
     if total_income == 0 and total_expense == 0:
-        return None
+        return None  # Prevent NaN Error
 
     labels = ["Income", "Expense"]
     values = [total_income, total_expense]
@@ -108,5 +107,8 @@ def delete_transaction(id):
     db.session.commit()
     return redirect(url_for("index"))
 
-if __name__ == '__main__':
+def main():
     app.run(debug=True)
+
+if __name__ == '__main__':
+    main()
